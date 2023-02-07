@@ -3,6 +3,11 @@ html {
   height: 100vh;
   position: relative;
 }
+
+body {
+  overflow-x: hidden !important;
+}
+
 body:before {
   content: "";
   position: absolute;
@@ -25,18 +30,86 @@ body.offcanvas-menu:before {
   height: 251vw !important;
 }
 
-main {
-  /* background-color: var(--orange) !important; */
-  background-image: url(../images/permits-gradiente-2.png) !important;
+main,
+.contact-us {
+  background-image: url(../images/permits-gradiente-3.png) !important;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   color: var(--white);
 }
 
+i {
+  font-size: 36px !important;
+  color: #fff !important;
+}
+
+li {
+  font-size: 24px !important;
+}
+
 a,
 a:hover {
   text-decoration: none !important;
+}
+
+.image_full {
+  display: block;
+}
+
+.image_mobile {
+  display: none;
+}
+
+.contact-us-card {
+  height: 200px;
+  color: #000;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 45px;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+.contact-us-card:last-child {
+  height: auto !important;
+}
+
+.grafismo {
+  position: relative;
+  overflow: hidden;
+}
+
+.grafismo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  top: -50%;
+  left: 20%;
+  background: url(../images/permits-grafismo-radial-colorido.png) 0 0 no-repeat !important;
+  transform: rotate(270deg);
+}
+
+@media (max-width: 575px) {
+  .grafismo::before {
+    top: 0%;
+    left: 20%;
+  }
+}
+
+.position-icon {
+  position: absolute;
+  top: -40px;
+  left: -35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #084e70;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
 }
 
 .hero {
@@ -62,12 +135,7 @@ a:hover {
   width: 100%;
   padding: 5rem;
 }
-@media (max-width: 991.98px) {
-  .site-navbar {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
+
 .site-navbar .toggle-button {
   position: absolute;
   right: 0px;
@@ -82,12 +150,7 @@ a:hover {
   padding: 0;
   z-index: 3;
 }
-@media (max-width: 991.98px) {
-  .site-navbar .site-logo {
-    float: left;
-    position: relative;
-  }
-}
+
 .site-navbar .site-navigation.border-bottom {
   border-bottom: 1px solid white !important;
 }
@@ -95,7 +158,7 @@ a:hover {
   margin-bottom: 0;
 }
 .site-navbar .site-navigation .site-menu .active {
-  color: #ffc16e !important;
+  color: #f3cdff !important;
 }
 .site-navbar .site-navigation .site-menu a {
   text-decoration: none !important;
@@ -113,7 +176,7 @@ a:hover {
   text-decoration: none !important;
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
-  color: #ffc16e;
+  color: #f3cdff;
 }
 .site-navbar .site-navigation .site-menu .has-children {
   position: relative;
@@ -139,7 +202,7 @@ a:hover {
   top: 100%;
   position: absolute;
   text-align: left;
-  border-top: 2px solid #ffc16e;
+  border-top: 2px solid #f3cdff;
   -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
   padding: 0px 0;
@@ -187,7 +250,7 @@ a:hover {
   color: #000 !important;
 }
 .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
-  color: #ffc16e !important;
+  color: #f3cdff !important;
   background: #f8f9fa;
 }
 .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
@@ -264,7 +327,7 @@ a:hover {
 .site-navbar .site-navigation .site-menu .has-children:hover > a,
 .site-navbar .site-navigation .site-menu .has-children:focus > a,
 .site-navbar .site-navigation .site-menu .has-children:active > a {
-  color: #ffc16e;
+  color: #f3cdff;
 }
 .site-navbar .site-navigation .site-menu .has-children:hover,
 .site-navbar .site-navigation .site-menu .has-children:focus,
@@ -364,14 +427,14 @@ a:hover {
   color: #212529;
 }
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: #ffc16e;
+  color: #f3cdff;
 }
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
   display: block;
 }
 .site-mobile-menu .site-nav-wrap li .nav-link.active {
-  color: #ffc16e;
+  color: #f3cdff;
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
@@ -482,13 +545,13 @@ a:hover {
   box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
 }
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-  color: #ffc16e;
+  color: #f3cdff;
 }
 .sticky-wrapper.is-sticky .site-navbar ul li a {
-  color: #000 !important;
+  color: #000;
 }
 .sticky-wrapper.is-sticky .site-navbar ul li a.active {
-  color: #ffc16e !important;
+  color: #f3cdff !important;
 }
 .sticky-wrapper .shrink {
   padding-top: 0px !important;
@@ -498,5 +561,29 @@ a:hover {
   .sticky-wrapper .shrink {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .image_full {
+    display: none;
+  }
+
+  .image_mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-navbar {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-navbar .site-logo {
+    float: left;
+    position: relative;
   }
 }
