@@ -8,6 +8,25 @@ body {
   overflow-x: hidden !important;
 }
 
+.main-section {
+  width: 100vw !important;
+  height: 500px !important;
+  max-width: 100% !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/logo.png) !important;
+  background-size: cover;
+  color: var(--white);
+}
+
+@media (min-width: 1023px) {
+  .main-section {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
+
 body:before {
   content: "";
   position: absolute;
@@ -30,9 +49,63 @@ body.offcanvas-menu:before {
   height: 251vw !important;
 }
 
-main,
-.contact-us {
+.separator {
+  height: 50px !important;
+  background-size: 100% 100% !important;
   background-image: url(../images/permits-gradiente-3.png) !important;
+  color: var(--white);
+}
+
+.about-us {
+  width: 100vw !important;
+  height: 500px !important;
+  max-width: 100% !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/about-us-2.png) !important;
+  background-size: cover;
+  color: var(--white);
+}
+
+.services {
+  width: 100vw !important;
+  height: 500px !important;
+  max-width: 100% !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/services.png) !important;
+  background-size: cover;
+  color: var(--white);
+}
+
+.main-section {
+  width: 100vw !important;
+  height: 500px !important;
+  max-width: 100% !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/logo.png) !important;
+  background-size: cover;
+  color: var(--white);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 1023px) {
+  .main-section {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
+
+.contact-us {
+  background-image: url(../images/logo.png) !important;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -75,6 +148,11 @@ a:hover {
   height: auto !important;
 }
 
+.grafismo-footer {
+  opacity: 0.7;
+  background: url(../images/permits-grafismo-radial-colorido.png) 0 0 no-repeat !important;
+}
+
 .grafismo {
   position: relative;
   overflow: hidden;
@@ -86,10 +164,11 @@ a:hover {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  top: -50%;
-  left: 20%;
+  top: -51%;
+  left: 28%;
+  z-index: 1;
   background: url(../images/permits-grafismo-radial-colorido.png) 0 0 no-repeat !important;
-  transform: rotate(270deg);
+  transform: rotate(225deg);
 }
 
 @media (max-width: 575px) {
@@ -106,7 +185,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #084e70;
+  background-color: #f47928;
   height: 65px;
   width: 65px;
   border-radius: 50%;
@@ -133,7 +212,7 @@ a:hover {
   z-index: 1999;
   position: relative;
   width: 100%;
-  padding: 5rem;
+  padding: 2rem 2rem;
 }
 
 .site-navbar .toggle-button {
@@ -520,6 +599,7 @@ a:hover {
   position: relative;
   z-index: 100;
   width: 100%;
+  height: 130px !important;
 }
 .sticky-wrapper .site-navbar {
   -webkit-transition: 0.3s all ease;
@@ -528,7 +608,7 @@ a:hover {
 }
 .sticky-wrapper .site-navbar {
   background: #fff;
-  height: 200px !important;
+  height: auto !important;
 }
 .sticky-wrapper .site-navbar .site-logo a {
   color: #fff;
@@ -574,12 +654,12 @@ a:hover {
   }
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .site-navbar {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-}
+} */
 
 @media (max-width: 991.98px) {
   .site-navbar .site-logo {

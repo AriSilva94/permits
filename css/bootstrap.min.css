@@ -35,7 +35,7 @@ body {
   --red: #dc3545;
   --white: #fff;
   --gray: #f9f9f9;
-  --primary: #084e70;
+  --primary: #f47928;
   --orange-light: #f3cdff;
   --success: #28a745;
   --info: #17a2b8;
@@ -80,7 +80,7 @@ section {
 }
 
 footer {
-  background-color: var(--orange-light) !important;
+  background-color: var(--white) !important;
 }
 
 .footer-gradient {
@@ -211,7 +211,7 @@ sup {
 }
 
 a {
-  color: #084e70;
+  color: #f47928;
   text-decoration: none;
   background-color: transparent;
 }
