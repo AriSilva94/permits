@@ -8,25 +8,6 @@ body {
   overflow-x: hidden !important;
 }
 
-.main-section {
-  width: 100vw !important;
-  height: 500px !important;
-  max-width: 100% !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/logo.png) !important;
-  background-size: cover;
-  color: var(--white);
-}
-
-@media (min-width: 1023px) {
-  .main-section {
-    width: 100vw !important;
-    height: 100vh !important;
-  }
-}
-
 body:before {
   content: "";
   position: absolute;
@@ -46,13 +27,13 @@ body.offcanvas-menu:before {
   opacity: 1;
   z-index: 1002;
   visibility: visible;
-  height: 251vw !important;
+  height: 680vw !important;
 }
 
 .separator {
   height: 50px !important;
   background-size: 100% 100% !important;
-  background-image: url(../images/permits-gradiente-3.png) !important;
+  background-image: url(../images/permits-gradiente-separator.png) !important;
   color: var(--white);
 }
 
@@ -80,9 +61,33 @@ body.offcanvas-menu:before {
   color: var(--white);
 }
 
+.main-section > p {
+  position: absolute;
+  top: 295px;
+}
+
+@media (min-width: 768px) and (max-width: 1022px) {
+  .main-section > p {
+    top: 250px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 2542px) {
+  .main-section > p {
+    top: 440px;
+  }
+}
+
+@media (min-width: 2543px) {
+  .main-section > p {
+    top: 475px;
+  }
+}
+
 .main-section {
+  position: relative;
   width: 100vw !important;
-  height: 500px !important;
+  height: 50vh !important;
   max-width: 100% !important;
   background-size: 100% 100% !important;
   background-repeat: no-repeat;
@@ -100,7 +105,7 @@ body.offcanvas-menu:before {
 @media (min-width: 1023px) {
   .main-section {
     width: 100vw !important;
-    height: 100vh !important;
+    height: 80vh !important;
   }
 }
 
@@ -255,7 +260,7 @@ a:hover {
   text-decoration: none !important;
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
-  color: #f3cdff;
+  color: #f47928;
 }
 .site-navbar .site-navigation .site-menu .has-children {
   position: relative;
