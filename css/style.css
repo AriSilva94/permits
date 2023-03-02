@@ -32,18 +32,18 @@ body.offcanvas-menu:before {
 }
 
 .img-contact-us {
-  height: 400px !important;
+  height: 290px !important;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .img-contact-us {
-    height: 500px !important;
+    height: 365px !important;
   }
 }
 
 @media (min-width: 1200px) {
   .img-contact-us {
-    height: 570px !important;
+    height: 365px !important;
   }
 }
 
