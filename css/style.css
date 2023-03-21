@@ -55,13 +55,44 @@ h3 {
   position: relative;
   border: 2px solid #000;
   border-radius: 50px;
-  height: auto !important;
+  height: 300px !important;
+  max-height: 310px !important;
 }
 
 .custom-card-icon {
   position: absolute;
   top: 35px;
   left: -22px;
+}
+
+.custom-img-carousel-first-slide {
+  height: auto !important;
+  max-height: 60vh !important;
+
+  width: 100% !important;
+  height: 400px !important;
+  background-image: url("../images/carousel-1.jpg") !important;
+  background-size: cover;
+}
+
+.custom-img-carousel-second-slide {
+  height: auto !important;
+  max-height: 60vh !important;
+
+  width: 100% !important;
+  height: 400px !important;
+  background-image: url("../images/carousel-2.jpg") !important;
+  background-size: cover;
+}
+
+.custom-img-carousel-third-slide {
+  height: auto !important;
+  max-height: 60vh !important;
+
+  width: 100% !important;
+  height: 400px !important;
+  background-image: url("../images/carousel-3.jpg") !important;
+  background-size: cover;
 }
 
 ion-icon {
@@ -71,7 +102,7 @@ ion-icon {
   background-color: var(--primary);
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+/* @media (min-width: 767px) and (max-width: 991px) {
   .custom-card {
     height: 275px !important;
   }
@@ -105,10 +136,13 @@ ion-icon {
 }
 
 @media (min-width: 1200px) {
+  .custom-card:nth-child(4) {
+    height: 250px !important;
+  }
   .custom-card:last-child {
     height: 250px !important;
   }
-}
+} */
 
 .separator {
   opacity: 0.7;

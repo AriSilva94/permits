@@ -91,6 +91,10 @@ footer {
   color: var(--brown) !important;
 }
 
+a > span {
+  border: 0 !important;
+}
+
 span {
   border-bottom: 3px solid var(--brown) !important;
 }
