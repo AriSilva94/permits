@@ -55,8 +55,7 @@ h3 {
   position: relative;
   border: 2px solid #000;
   border-radius: 50px;
-  height: 300px !important;
-  max-height: 310px !important;
+  height: auto !important;
 }
 
 .custom-card-icon {
@@ -102,7 +101,7 @@ ion-icon {
   background-color: var(--primary);
 }
 
-/* @media (min-width: 767px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
   .custom-card {
     height: 275px !important;
   }
@@ -116,7 +115,7 @@ ion-icon {
 
 @media (min-width: 1388px) {
   .custom-card {
-    height: auto !important;
+    height: 250px !important;
   }
 }
 
@@ -137,12 +136,12 @@ ion-icon {
 
 @media (min-width: 1200px) {
   .custom-card:nth-child(4) {
-    height: 250px !important;
+    height: 220px !important;
   }
   .custom-card:last-child {
-    height: 250px !important;
+    height: 220px !important;
   }
-} */
+}
 
 .separator {
   opacity: 0.7;
