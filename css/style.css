@@ -74,8 +74,8 @@ h3 {
 
   width: 100% !important;
   height: 560px !important;
-  background-image: url("../images/logo.png") !important;
-  background-size: cover;
+  background-image: url("../images/logo1.png") !important;
+  background-size: 100% 100%;
 }
 
 .custom-img-carousel-second-slide {
@@ -95,6 +95,16 @@ h3 {
   width: 100% !important;
   height: 560px !important;
   background-image: url("../images/carousel-3.jpg") !important;
+  background-size: cover;
+}
+
+.custom-img-carousel-fourth-slide {
+  height: auto !important;
+  max-height: 60vh !important;
+
+  width: 100% !important;
+  height: 560px !important;
+  background-image: url("../images/carousel-4.jpg") !important;
   background-size: cover;
 }
 
