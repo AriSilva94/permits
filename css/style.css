@@ -51,6 +51,10 @@ h3 {
   font-size: 25px !important;
 }
 
+.card-body {
+  min-height: 260px !important;
+}
+
 .custom-card {
   position: relative;
   border: 2px solid #000;
@@ -69,8 +73,8 @@ h3 {
   max-height: 60vh !important;
 
   width: 100% !important;
-  height: 400px !important;
-  background-image: url("../images/carousel-1.jpg") !important;
+  height: 560px !important;
+  background-image: url("../images/logo.png") !important;
   background-size: cover;
 }
 
@@ -79,8 +83,8 @@ h3 {
   max-height: 60vh !important;
 
   width: 100% !important;
-  height: 400px !important;
-  background-image: url("../images/carousel-2.jpg") !important;
+  height: 560px !important;
+  background-image: url("../images/carousel-1.jpg") !important;
   background-size: cover;
 }
 
@@ -89,7 +93,7 @@ h3 {
   max-height: 60vh !important;
 
   width: 100% !important;
-  height: 400px !important;
+  height: 560px !important;
   background-image: url("../images/carousel-3.jpg") !important;
   background-size: cover;
 }
@@ -892,16 +896,41 @@ a:hover {
   }
 }
 
-/* @media (max-width: 991.98px) {
-  .site-navbar {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-} */
-
 @media (max-width: 991.98px) {
   .site-navbar .site-logo {
     float: left;
     position: relative;
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
   }
 }

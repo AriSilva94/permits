@@ -77,10 +77,10 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100 custom-img-carousel-first-slide">
-                <div class="carousel-caption d-block">
+                <!-- <div class="carousel-caption d-block">
                   <h5 class="font-weight-bold">Título</h5>
                   <p>algum texto sobre a empresa</p>
-                </div>
+                </div> -->
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100 custom-img-carousel-second-slide">
@@ -155,7 +155,7 @@
         </h2>
       </div>
       <div class="row px-4 my-2 d-flex align-items-center justify-content-around">
-        <div class="m-2 col-12 col-md-5 col-lg-3 col-xl-3 custom-card">
+        <div class="d-block d-sm-none m-2 col-12 col-md-5 col-lg-3 col-xl-3 custom-card">
           <ion-icon size="large" class="custom-card-icon" name="document-outline"></ion-icon>
           <div class="col-12">
             <h3 class="pt-4 px-3 font-weight-bold">Paralegal</h3>
@@ -164,7 +164,7 @@
             <p style="height: auto;" class="px-3 d-flex align-items-center justify-content-center text-body-card">Registro de empresa, emissão de CNPJ, IE, IM, certidões e registros.</p>
           </div>
         </div>
-        <div class="m-2 col-12 col-md-5 col-lg-3 col-xl-3 custom-card">
+        <div class="d-block d-sm-none m-2 col-12 col-md-5 col-lg-3 col-xl-3 custom-card">
           <ion-icon size="large" class="custom-card-icon" name="newspaper-outline"></ion-icon>
           <div class="col-12">
             <h3 class="pt-4 px-3 font-weight-bold">Estudos de viabilidade</h3>
@@ -173,7 +173,7 @@
             <p style="height: auto;" class="px-3 d-flex align-items-center justify-content-center text-body-card">Análise técnica, legal e da viabilidade de empreendimentos.</p>
           </div>
         </div>
-        <div class="m-2 col-12 col-md-5 col-lg-3 col-xl-4 custom-card">
+        <div class="d-block d-sm-none m-2 col-12 col-md-5 col-lg-3 col-xl-4 custom-card">
           
           <ion-icon size="large" class="custom-card-icon" name="happy-outline"></ion-icon>
           <div class="col-12">
@@ -183,7 +183,7 @@
             <p style="height: auto;" class="px-3 d-flex align-items-center justify-content-center text-body-card">Solução especializada para cada atividade e necessidade do cliente.</p>
           </div>
         </div>
-        <div class="m-2 col-12 col-md-5 col-lg-4 col-xl-5 custom-card">
+        <div class="d-block d-sm-none m-2 col-12 col-md-5 col-lg-4 col-xl-5 custom-card">
           <ion-icon size="large" class="custom-card-icon" name="receipt-outline"></ion-icon>
           <div class="col-12">
             <h3 class="pt-4 px-3 font-weight-bold">Licenças e Alvarás</h3>
@@ -192,7 +192,7 @@
             <p style="height: auto;" class="px-3 d-flex align-items-center justify-content-center text-body-card">Licenças, alvarás e registros para iniciar e manter a operação das atividades.</p>
           </div>
         </div>
-        <div class="m-2 col-12 col-md-5 col-lg-6 col-xl-6 custom-card">
+        <div class="d-block d-sm-none m-2 col-12 col-md-5 col-lg-6 col-xl-6 custom-card">
           <ion-icon size="large" class="custom-card-icon" name="albums-outline"></ion-icon>
           <div class="col-12">
             <h3 style="font-size: 24px !important;" class="pt-4 px-3 font-weight-bold">Alvarás contrutivos e aprovação de projetos</h3>
@@ -206,7 +206,77 @@
             </div>
           </div>
         </div> 
-      </div>                       
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card">
+              <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                <ion-icon size="large" class="custom-card-icon" name="document-outline"></ion-icon>
+                <h3 class="d-flex align-items-center justify-content-center card-title px-2 font-weight-bold">
+                  Paralegal
+                </h3>
+                <p class="card-text pt-3 d-flex align-items-center justify-content-center">Registro de empresa, emissão de CNPJ, IE, IM, certidões e registros.</p>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                <ion-icon size="large" class="custom-card-icon" name="newspaper-outline"></ion-icon>
+                <h3 class="d-flex align-items-center justify-content-center card-title px-2 font-weight-bold">
+                  Estudos de viabilidade
+                </h3>
+                <p class="card-text pt-3 d-flex align-items-center justify-content-center">Análise técnica, legal e da viabilidade de empreendimentos.</p>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                <ion-icon size="large" class="custom-card-icon" name="happy-outline"></ion-icon>
+                <h3 class="d-flex align-items-center justify-content-center card-title px-2 font-weight-bold">
+                  Consultoria
+                </h3>
+                <p class="card-text pt-3 d-flex align-items-center justify-content-center">Solução especializada para cada atividade e necessidade do cliente.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                  <ion-icon size="large" class="custom-card-icon" name="receipt-outline"></ion-icon>
+                  <h3 class="d-flex align-items-center justify-content-center card-title px-2 font-weight-bold">
+                    Licenças e Alvarás
+                  </h3>
+                  <p class="card-text pt-3 d-flex align-items-center justify-content-center p-5">Licenças, alvarás e registros para iniciar e manter a operação das atividades.</p>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <div class="card-body">
+                  <ion-icon size="large" class="custom-card-icon" name="albums-outline"></ion-icon>
+                  <h3 class="d-flex align-items-center justify-content-center card-title px-2 pt-2 font-weight-bold text-center" style="font-size: 22px !important;">
+                    Alvarás contrutivos e aprovação de projetos
+                  </h3>
+                  <p class="m-0 card-text pt-3 d-flex align-items-center">Registro de empresa, emissão de CNPJ, IE, IM, certidões e registros.</p>                  
+                  <p class="m-0 card-text pt-3 d-flex align-items-center">Contruções, Reformas, Regularizações.</p>
+                  <p class="m-0 card-text pt-3 d-flex align-items-center">Demolições e Tapume.</p>
+                  <p class="m-0 card-text pt-3 d-flex align-items-center">Certificado de Conclusão</p>
+                  <p class="m-0 card-text pt-3 d-flex align-items-center">(Habite-se)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>                          
     </div>
   </aside>
 
