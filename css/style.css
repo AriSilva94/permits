@@ -1,3 +1,144 @@
+:root {
+  --pink: #e181ff;
+  --red: #dc3545;
+  --white: #fff;
+  --gray: #f9f9f9;
+  --primary: #f47928;
+  --orange-light: #f3cdff;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #000;
+  --brown: #451c10;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-aceh: Aceh, sans-serif !important;
+  --font-family-reiju: Reiju, sans-serif !important;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+@font-face {
+  font-family: Aceh;
+  src: url("../fonts/Aceh-Soft/AcehSoft-Light.otf");
+}
+
+@font-face {
+  font-family: Reiju;
+  src: url("../fonts/Reiju/OTF/Reiju-Two.otf");
+}
+
+html {
+  font-family: var(--font-family-aceh) !important;
+  color: var(--dark) !important;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 175px !important;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+footer {
+  background-color: var(--white) !important;
+}
+
+.footer-gradient {
+  background-color: var(--gray);
+}
+
+.footer-text-color {
+  color: var(--brown) !important;
+}
+
+a > span {
+  border: 0 !important;
+}
+
+span {
+  border-bottom: 3px solid var(--brown) !important;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+  font-family: var(--font-family-reiju) !important;
+}
+
+h1,
+.h1 {
+  color: var(--white) !important;
+}
+
+h2,
+.h2 {
+  color: var(--brown) !important;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5rem !important;
+  font-size: 1.3rem !important;
+}
+
 html {
   background-color: #fff;
   height: 100vh;
@@ -49,6 +190,7 @@ body.offcanvas-menu:before {
 
 h3 {
   font-size: 25px !important;
+  font-family: var(--font-family-aceh) !important;
 }
 
 .card-body {
@@ -949,4 +1091,55 @@ a:hover {
   .card img {
     height: 11em;
   }
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f8a772;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+span {
+  border-bottom: 0px !important;
+}
+
+.carousel-control-next {
+  right: 25px;
+}
+
+.carousel-control-prev {
+  left: 25px;
+}
+
+.carousel-inner {
+  padding: 0;
+}
+
+[data-toggle="collapse"] .fa:before {
+  content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f13a";
+}
+
+.card-header {
+  background-color: #f8a772;
+}
+
+.btn-link {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.card-body {
+  min-height: 50px !important;
 }
