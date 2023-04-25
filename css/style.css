@@ -1140,6 +1140,11 @@ span {
   text-decoration: none !important;
 }
 
+.btn-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .card-body {
   min-height: 50px !important;
 }
