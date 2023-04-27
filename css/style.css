@@ -218,8 +218,6 @@ h3 {
 
 .custom-img-carousel-first-slide {
   height: auto !important;
-  max-height: 60vh !important;
-
   width: 100% !important;
   height: 560px !important;
   background-image: url("../images/logo1.png") !important;
@@ -228,31 +226,21 @@ h3 {
 
 .custom-img-carousel-second-slide {
   height: auto !important;
-  max-height: 60vh !important;
+  /* max-height: 60vh !important; */
 
   width: 100% !important;
   height: 560px !important;
-  background-image: url("../images/carousel-1.jpg") !important;
+  background-image: url("../images/img2.jpeg") !important;
   background-size: cover;
 }
 
 .custom-img-carousel-third-slide {
   height: auto !important;
-  max-height: 60vh !important;
+  /* max-height: 60vh !important; */
 
   width: 100% !important;
   height: 560px !important;
-  background-image: url("../images/carousel-3.jpg") !important;
-  background-size: cover;
-}
-
-.custom-img-carousel-fourth-slide {
-  height: auto !important;
-  max-height: 60vh !important;
-
-  width: 100% !important;
-  height: 560px !important;
-  background-image: url("../images/carousel-4.jpg") !important;
+  background-image: url("../images/img3.jpeg") !important;
   background-size: cover;
 }
 
@@ -1132,19 +1120,24 @@ span {
 }
 
 .card-header {
-  background-color: #f8a772;
+  background-color: #fff;
 }
 
 .btn-link {
-  color: #fff;
+  color: #000;
   text-decoration: none !important;
 }
 
 .btn-link:hover {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
 .card-body {
+  background-color: #fff;
   min-height: 50px !important;
+}
+
+.fa {
+  color: #f8a772 !important;
 }
