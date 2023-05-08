@@ -1153,3 +1153,12 @@ span {
   transform: translateY(0);
   opacity: 1;
 }
+
+.services-card {
+  height: 150px;
+  background-color: var(--primary);
+}
+.custom-btn-icon {
+  background-color: var(--primary);
+  border-radius: 0px;
+}
