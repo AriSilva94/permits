@@ -162,80 +162,135 @@
             <span>Serviços</span>
           </h2>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="p-1 col-12 col-sm-4">
-            <div class="services-card d-flex flex-column align-items-center justify-content-around">
-              <div class="custom-img-card"></div>
-              <h2 class="text-center title-service-card">Paralegal</h2>
-              <p class="d-none subtitle-service-card">Registro de empresa, emissão de CNPJ, IE, IM, certidões e registros.</p>
-              <button onclick="showModal(event)" type="button" class="p-0 px-2 btn btn-light d-flex align-items-center justify-content-between" data-toggle="modal"
-              data-target="#exampleModal">saiba mais<i class="fa fa-plus custom-btn-icon px-2"></i></button>
+        <div class="col-12 col-md-6">
+          <div id="accordion" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <ion-icon size="large" class="mr-3" name="document-outline"></ion-icon>
+                    <button class="btn btn-link d-flex align-items-center justify-content-between w-100"
+                      data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      <h3 class="pt-2 text-left">Paralegal</h3><i class="fa" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="pt-2">Registro de empresa, emissão de CNPJ, IE, IM, certidões e registros</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="p-1 col-12 col-sm-4">
-            <div class="services-card d-flex flex-column align-items-center justify-content-around">
-              <div class="custom-img-card"></div>
-              <h2 class="text-center title-service-card">Licenças e Alvarás</h2>
-              <p class="d-none subtitle-service-card">Licenças, alvarás e registros para iniciar e manter a operação das atividades.</p>
-              <button onclick="showModal(event)" type="button" class="p-0 px-2 btn btn-light d-flex align-items-center justify-content-between" data-toggle="modal"
-              data-target="#exampleModal">saiba mais<i class="fa fa-plus custom-btn-icon px-2"></i></button>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <ion-icon size="large" class="mr-3" name="stats-chart-outline"></ion-icon>
+                    <button class="btn btn-link d-flex align-items-center justify-content-between w-100"
+                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                      aria-controls="collapseTwo">
+                      <h3 class="pt-2 text-left">EVTL - Estudo de Viabilidade Técnica e Legal</h3><i class="fa" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="pt-2">O EVTL - Estudo de Viabilidade Técnica e Legal é desenvolvido para identificar os procedimentos necessários à regularização de um determinado imóvel.</p>
+                  <p class="pt-2">A partir do EVTL, é possível antecipar todas as etapas do processo de aprovações, prever prazos e desenhar fluxogramas, incluindo as particularidades entre os órgãos públicos envolvidos.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="p-1 col-12 col-sm-4">
-            <div class="services-card d-flex flex-column align-items-center justify-content-around">
-              <div class="custom-img-card"></div>
-              <h2 class="text-center title-service-card">EVTL - Estudo de Viabilidade</h2>
-              <p class="d-none subtitle-service-card">O EVTL - Estudo de Viabilidade Técnica e Legal é desenvolvido para identificar os procedimentos necessários à regularização de um determinado imóvel.
-
-                A partir do EVTL, é possível antecipar todas as etapas do processo de aprovações, prever prazos e desenhar fluxogramas, incluindo as particularidades entre os órgãos públicos envolvidos.
-              </p>
-              <button onclick="showModal(event)" type="button" class="p-0 px-2 btn btn-light d-flex align-items-center justify-content-between" data-toggle="modal"
-              data-target="#exampleModal">saiba mais<i class="fa fa-plus custom-btn-icon px-2"></i></button>
-            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <ion-icon size="large" class="mr-3" name="happy-outline"></ion-icon>
+                    <button class="btn btn-link d-flex align-items-center justify-content-between w-100"
+                      data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                      aria-controls="collapseThree">
+                      <h3 class="pt-2 text-left">Consultoria</h3><i class="fa" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="pt-2">Solução especializada para cada atividade e necessidade do cliente.</p>
+                </div>
+              </div>
+            </div>            
           </div>
         </div>
-        <div class="row">
-          <div class="p-1 col-12 col-sm-4">
-            <div class="services-card d-flex flex-column align-items-center justify-content-around">
-              <div class="custom-img-card"></div>
-              <h2 class="text-center title-service-card">Aprovação de Projetos</h2>
-              <p class="d-none subtitle-service-card">Contruções, Reformas, Regularizações.
-
-                Demolições e Tapume.
-
-                Certificado de Conclusão.
-
-                (Habite-se).
-
-                PPCI Plano de prevenção e proteção de combate a incêndio.</p>
-                <button onclick="showModal(event)" type="button" class="p-0 px-2 btn btn-light d-flex align-items-center justify-content-between" data-toggle="modal"
-                data-target="#exampleModal">saiba mais<i class="fa fa-plus custom-btn-icon px-2"></i></button>
+        <div class="col-12 col-md-6">
+          <div id="accordion2" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingFourth2">
+                <h5 class="mb-0">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <ion-icon size="large" class="mr-3" name="receipt-outline"></ion-icon>
+                    <button class="btn btn-link d-flex align-items-center justify-content-between w-100"
+                      data-toggle="collapse" data-target="#collapseFourth2" aria-expanded="true"
+                      aria-controls="collapseFourth2">
+                      <h3 class="pt-2 text-left">Licenças e Alvarás</h3><i class="fa" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseFourth2" class="collapse show" aria-labelledby="headingFourth2" data-parent="#accordion2">
+                <div class="card-body">
+                  <p class="pt-2">Licenças, alvarás e registros para iniciar e manter a operação das atividades.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="p-1 col-12 col-sm-4">
-            <div class="services-card d-flex flex-column align-items-center justify-content-around">
-              <div class="custom-img-card"></div>
-              <h2 class="text-center title-service-card">Consultoria</h2>
-              <p class="d-none subtitle-service-card">Solução especializada para cada atividade e necessidade do cliente.</p>
-              <button onclick="showModal(event)" type="button" class="p-0 px-2 btn btn-light d-flex align-items-center justify-content-between" data-toggle="modal"
-              data-target="#exampleModal">saiba mais<i class="fa fa-plus custom-btn-icon px-2"></i></button>
+            <div class="card">
+              <div class="card-header" id="headingFifth2">
+                <h5 class="mb-0">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <ion-icon size="large" class="mr-3" name="newspaper-outline"></ion-icon>
+                    <button class="btn btn-link d-flex align-items-center justify-content-between w-100"
+                      data-toggle="collapse" data-target="#collapseFifth2" aria-expanded="true"
+                      aria-controls="collapseFifth2">
+                      <h3 class="pt-2 text-left">Aprovação de projetos</h3><i class="fa"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseFifth2" class="collapse" aria-labelledby="headingFifth2" data-parent="#accordion2">
+                <div class="card-body">
+                  <p class="pt-2">Contruções, Reformas, Regularizações.</p>
+                  <p class="pt-2">Demolições e Tapume.</p>
+                  <p class="pt-2">Certificado de Conclusão.</p>
+                  <p class="pt-2">(Habite-se).</p>
+                  <p class="pt-2">PPCI Plano de prevenção e proteção de combate a incêndio.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="p-1 col-12 col-sm-4">
-            <div class="services-card d-flex flex-column align-items-center justify-content-around">
-              <div class="custom-img-card"></div>
-              <h2 class="text-center title-service-card">Licenciamentos</h2>
-              <p class="d-none subtitle-service-card">Alvará de Funcionamento, Licença Sanitária, Licença Ambiental,
-
-                AVCB/CLCB, Licenças CETESB, Registro CRMV, Laudos técnicos.
-
-                Atendimento de notificações e outros serviços.
-
-                Contamos com equipe técnica e operacional nas principais capitais do Brasil, visando agilidade e qualidade na execução.</p>
-              <button onclick="showModal(event)" type="button" class="p-0 px-2 btn btn-light d-flex align-items-center justify-content-between" data-toggle="modal"
-              data-target="#exampleModal">saiba mais<i class="fa fa-plus custom-btn-icon px-2"></i></button>
+            <div class="card">
+              <div class="card-header" id="headingSix2">
+                <h5 class="mb-0">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <ion-icon size="large" class="mr-3" name="document-text-outline"></ion-icon>
+                    <button class="btn btn-link d-flex align-items-center justify-content-between w-100"
+                      data-toggle="collapse" data-target="#collapseSix2" aria-expanded="true"
+                      aria-controls="collapseSix2">
+                      <h3 class="pt-2 text-left">Licenciamentos </h3><i class="fa"
+                        aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseSix2" class="collapse" aria-labelledby="headingSix2" data-parent="#accordion2">
+                <div class="card-body">
+                  <p class="pt-2">Alvará de Funcionamento, Licença Sanitária, Licença Ambiental.</p>
+                  <p class="pt-2">AVCB/CLCB, Licenças CETESB, Registro CRMV, Laudos técnicos.</p>
+                  <p class="pt-2">Atendimento de notificações e outros serviços.</p>
+                  <p class="pt-2">Contamos com equipe técnica e operacional nas principais capitais do Brasil, visando agilidade e qualidade na execução.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
